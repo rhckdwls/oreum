@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-import OreumData from "./dbMap.json";
-
 import { useHistory } from "react-router-dom";
 
 const { kakao } = window;
