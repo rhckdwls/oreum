@@ -9,7 +9,7 @@ function ImageSlider(props) {
           <div key={i} className="mt-3">
             <img
               style={{ width: "100%", maxHeight: "200px" }}
-              src={`https://git.heroku.com/weoreum.git/${image}`}
+              src={`https://weoreum.herokuapp.com/${image}`}
             />
           </div>
         ))}

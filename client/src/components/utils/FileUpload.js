@@ -68,7 +68,7 @@ function FileUpload(props) {
           <div onClick={() => deleteHandler(이미지)} key={index}>
             <img
               style={{ minWidth: "300px", width: "300px", height: "240px" }}
-              src={`http://localhost:5000/${이미지}`}
+              src={`https://weoreum.herokuapp.com/${이미지}`}
               alt=""
             />
           </div>
