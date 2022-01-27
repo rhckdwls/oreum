@@ -11,6 +11,7 @@ import UploadPage from "./views/UploadPage/UploadPage";
 import DetailOreumRoomPage from "./views/DetailOreumRoomPage/DetailOreumRoomPage";
 import SearchOreum from "./views/SearchOreum/SearchOreum";
 import OreumDetail from "./views/OreumDetail/OreumDetail";
+import Not from "./views/Not/Not";
 
 //null   Anyone Can go inside
 //true   only logged in user can go inside
@@ -45,6 +46,7 @@ function App() {
             path="/oreum/detail/:id"
             component={Auth(OreumDetail, null)}
           />
+          <Route path="*" component={Auth(Not, null)} />
         </Switch>
       </div>
       <Footer />
