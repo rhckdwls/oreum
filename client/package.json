@@ -1,5 +1,5 @@
 {
-  "homage": "https://weoreum.herokuapp.com/",
+  "homepage": "https://weoreum.herokuapp.com",
   "name": "client",
   "version": "0.1.0",
   "private": true,
