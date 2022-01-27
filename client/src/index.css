@@ -1,0 +1,54 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+body {
+  margin: 0;
+  font-family: "NanumSquare", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "NanumSquare", sans-serif, "Courier New", monospace;
+}
+
+body {
+  font-family: "NanumSquare", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #24292e;
+  background-color: #fff;
+}
+
+.app {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+input.error {
+  border-color: red;
+}
+
+.input-feedback {
+  color: red;
+  height: 5px;
+  margin-top: -12px;
+}
+
+.topBtn {
+  position: fixed;
+  bottom: 80px;
+  right: 10px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  z-index: -10;
+}
+
+.topBtn.active {
+  z-index: 10;
+  opacity: 1;
+}
