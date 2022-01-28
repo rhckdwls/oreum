@@ -10,7 +10,7 @@ function OreumImage(props) {
 
       props.detail.images.map((item) => {
         images.push({
-          fullscreen: `http://weoreum.herokuapp.com/${item}`,
+          original: `https://weoreum.herokuapp.com/${item}`,
         });
       });
       setImages(images);
