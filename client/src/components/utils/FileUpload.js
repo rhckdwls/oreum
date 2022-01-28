@@ -33,10 +33,10 @@ function FileUpload(props) {
   };
 
   return (
-    <div className="d-md-flex justify-content-md-between mt-3">
+    <div className="d-md-flex justify-content-md-between ">
       <Dropzone onDrop={이미지등록}>
         {({ getRootProps, getInputProps }) => (
-          <section>
+          <section className="mt-3">
             <div
               style={{
                 width: 300,
