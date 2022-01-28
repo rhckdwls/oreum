@@ -25,9 +25,6 @@ function Scroll() {
     setScrollY(0); // ScrollY 의 값을 초기화
     setBtnStatus(false); // BtnStatus의 값을 false로 바꿈 => 버튼 숨김
   };
-  useEffect(() => {
-    console.log("ScrollY is ", ScrollY); // ScrollY가 변화할때마다 값을 콘솔에 출력
-  }, [ScrollY]);
 
   useEffect(() => {
     const watch = () => {

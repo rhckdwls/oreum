@@ -69,7 +69,6 @@ function FileUpload(props) {
             <img
               style={{ minWidth: "300px", width: "300px", height: "240px" }}
               src={`http://weoreum.herokuapp.com/${이미지}`}
-              alt=""
             />
           </div>
         ))}
