@@ -28,7 +28,7 @@ ReactDOM.render(
         window.__REDUX_DEVTOOLS_EXTENSION__()
     )}
   >
-    <BrowserRouter basename="./index.html">
+    <BrowserRouter basename="/react_oreum-db,react_app">
       <App />
     </BrowserRouter>
   </Provider>,
