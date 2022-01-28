@@ -45,7 +45,7 @@ ul.pagination li a.active {
 }
 .bg2 {
   padding: 50px;
-  background: url(/assets/bg1.JPG) center no-repeat;
+  background: url("/assets/bg1.jpg") center no-repeat;
   background-size: cover;
   max-width: 100%;
   height: auto;

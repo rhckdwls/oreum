@@ -1,6 +1,6 @@
 .bg {
   padding: 30px;
-  background: url(/assets/bg.JPG) center no-repeat;
+  background: url("/assets/bg.jpg") center no-repeat;
   background-size: cover;
   max-width: 100%;
   height: auto;
