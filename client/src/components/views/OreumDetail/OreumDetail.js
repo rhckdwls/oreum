@@ -17,7 +17,6 @@ function OreumDetail() {
   const images = [
     {
       original: 오름이미지,
-      thumbnail: 오름이미지,
     },
   ];
 
