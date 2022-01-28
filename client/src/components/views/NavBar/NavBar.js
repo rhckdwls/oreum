@@ -23,7 +23,7 @@ function NavBar() {
     >
       <div className="menu__logo">
         <a href="/">
-          <img src="./assets/logo.png" alt="" />
+          <img src="./assets/logo.png" alt="WeOreum" />
         </a>
       </div>
       <div className="menu__container mt-3">
