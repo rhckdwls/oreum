@@ -1,5 +1,5 @@
 import React from "react";
-import { SmileOutlined } from "@ant-design/icons";
+import { FaGithub } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -16,9 +16,11 @@ function Footer() {
         color: "#fff",
       }}
     >
-      <p>
-        {" "}
-        Jin <SmileOutlined />
+      <p className="fs-4">
+        Jin{" "}
+        <a href="https://github.com/rhckdwls/oreum" target="_blank">
+          <FaGithub />
+        </a>
       </p>
     </div>
   );
