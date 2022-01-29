@@ -21,9 +21,9 @@ function NavBar() {
       className="menu "
       style={{ position: "fixed", zIndex: 5, width: "100%" }}
     >
-      <div className="menu__logo">
+      <div className="menu__logo navbar-brand">
         <a href="/">
-          <img src="./assets/logo.png" alt="WeOreum" />
+          <img src="/assets/logo.png" alt="WeOreum" />
         </a>
       </div>
       <div className="menu__container mt-3">
