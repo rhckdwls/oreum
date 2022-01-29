@@ -58,7 +58,7 @@ function LandingPage() {
 
   const 오름카드설정 = 오름방들.map((oreum, i) => {
     return (
-      <Col lg={6} md={8} xs={24} key={i}>
+      <Col lg={6} md={8} xs={24} key={i} className="mt-2">
         <Card
           cover={
             <a href={`/oreum/${oreum._id}`}>
@@ -137,8 +137,8 @@ function LandingPage() {
             margin: "1rem auto",
           }}
         >
-          <div className="btn border border-black-50 me-3 ">
-            <a href="oreum/upload" className="text-black-50">
+          <div className="btn border border-dark  me-3 ">
+            <a href="oreum/upload" className="text-dark">
               오름방 등록
             </a>
           </div>
