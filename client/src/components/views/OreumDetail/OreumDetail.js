@@ -21,7 +21,7 @@ function OreumDetail() {
   ];
 
   return (
-    <div className="container mt-md-5">
+    <div className="container " style={{ marginTop: "25px" }}>
       <div>
         <h1 className="text-center fw-bold">{찾은오름.title}</h1>
       </div>
