@@ -46,6 +46,8 @@ function UploadPage(props) {
   };
 
   const 오름방등록 = (e) => {
+    e.preventDefault();
+
     if (!이름 || !설명 || !톡방 || !지역 || !이미지) {
       return alert("모든 값을 넣어주셔야 합니다.");
     }
