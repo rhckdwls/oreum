@@ -4,7 +4,6 @@ import Map from "./Sections/Map";
 import axios from "axios";
 import ImageSlider from "../../utils/ImageSlider";
 import { Card, Row, Col } from "antd";
-import Meta from "antd/lib/card/Meta";
 import CheckBox from "./Sections/CheckBox";
 import { area } from "./Sections/datas";
 import SearchFeature from "./Sections/SearchFeature";
