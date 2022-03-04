@@ -1,16 +1,10 @@
-Hello, My Friends  
-Thank you for Having interest in this repository ! 
+## WeOreum
 
-To use this application, 
+제주 오름 같이 갈사람을 구하고 오름 검색하는 사이트
 
-1. make dev.js file inside config folder 
-2. put mongoDB info into dev.js file 
-3. Type  " npm install " inside the root directory  ( Download Server Dependencies ) 
-4. Type " npm install " inside the client directory ( Download Front-end Dependencies )
+날씨 api
+카카오지도 api
 
+오름검색과 회원 가입과 로그인을 통해 오름방을 등록하여 같이 그 지역에 마음 맞는 사람과 오름 같이 갈수 있게 만들었습니다.
 
-If you have problem, feel free to ask me ^^ 
-
- You can watch the tutorial for this app.
-
-https://www.youtube.com/channel/UCFyXA9x8lpL3EYWeYhj4C4Q?view_as=subscriber
+반응형UI를 통해 핸드폰, 테플릿, 인터넷을 봐도 그 화면 크기에 맞게 조정되어 볼수있습니다.
