@@ -31,31 +31,16 @@ function OreumTabs(props) {
     );
   });
 
-  const 댓글등록 = () => {
+  const 댓글등록 = (e) => {
+    e.preventDefault();
     if (inputRef.current.value == "") {
-      alert("댓글을 입력하세요");
+      return;
     } else {
       const new댓글 = [...댓글];
       new댓글.unshift(입력값);
       댓글변경(new댓글);
       입력값변경("");
       inputRef.current.focus();
-    }
-  };
-
-  const 댓글등록엔터 = (e) => {
-    if (inputRef.current.value.length == 0) {
-      if (e.key == "Enter") {
-        alert("댓글을 입력하세요2");
-      }
-    } else {
-      if (e.key == "Enter") {
-        const new댓글 = [...댓글];
-        new댓글.unshift(입력값);
-        댓글변경(new댓글);
-        입력값변경("");
-        inputRef.current.focus();
-      }
     }
   };
 
@@ -78,24 +63,25 @@ function OreumTabs(props) {
       </Tab>
       <Tab eventKey="comment" title="댓글">
         <div className="d-flex ">
-          <input
-            type="text"
-            placeholder="댓글 작성하기"
-            className="form-control me-3"
-            onChange={(e) => {
-              입력값변경(e.target.value);
-            }}
-            value={입력값}
-            onKeyPress={댓글등록엔터}
-            ref={inputRef}
-          />
-          <button
-            className="btn btn-dark"
-            style={{ width: 100 }}
-            onClick={댓글등록}
-          >
-            등록
-          </button>
+          <form className=" input-group">
+            <input
+              type="text"
+              placeholder="댓글 작성하기"
+              className="form-control me-4"
+              onChange={(e) => {
+                입력값변경(e.target.value);
+              }}
+              value={입력값}
+              ref={inputRef}
+            />
+            <button
+              className="btn btn-dark form-label "
+              style={{ width: 100 }}
+              onClick={댓글등록}
+            >
+              등록
+            </button>
+          </form>
         </div>
         {댓글창}
       </Tab>

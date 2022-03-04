@@ -4,6 +4,7 @@ import RightMenu from "./Sections/RightMenu";
 import { Drawer, Button } from "antd";
 import { AlignRightOutlined } from "@ant-design/icons";
 import "./Sections/Navbar.css";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   const [visible, setVisible] = useState(false);
@@ -22,9 +23,9 @@ function NavBar() {
       style={{ position: "fixed", zIndex: 5, width: "100%" }}
     >
       <div className="menu__logo navbar-brand">
-        <a href="/">
+        <Link to="/">
           <img src="/assets/logo.png" alt="WeOreum" />
-        </a>
+        </Link>
       </div>
       <div className="menu__container mt-3">
         <div className="menu_left">

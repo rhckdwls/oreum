@@ -10,6 +10,7 @@ import { area } from "./Sections/datas";
 import SearchFeature from "./Sections/SearchFeature";
 import OreumWeather from "./Sections/OreumWeather";
 import Scroll from "../../utils/Scroll";
+import { Link } from "react-router-dom";
 
 function LandingPage() {
   const [오름방들, 오름방들설정] = useState([]);
@@ -61,9 +62,9 @@ function LandingPage() {
       <Col lg={6} md={8} xs={24} key={i} className="mt-2">
         <Card
           cover={
-            <a href={`/oreum/${oreum._id}`}>
+            <Link to={`/oreum/${oreum._id}`}>
               <ImageSlider images={oreum.images} />
-            </a>
+            </Link>
           }
         >
           <p className="fs-5">{oreum.title}</p>
