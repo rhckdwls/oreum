@@ -12,7 +12,8 @@ import Scroll from "../../utils/Scroll";
 import { Link } from "react-router-dom";
 
 function LandingPage() {
-  const [오름방들, 오름방들설정] = useState([]);
+  const [OreumRooms, setOreumRooms] = useState([]);
+  setOreumRooms;
   const [Skip, setSkip] = useState(0);
   const [Limit, setLimit] = useState(4);
   const [PostSize, setPostSize] = useState(0);
@@ -26,16 +27,16 @@ function LandingPage() {
       skip: Skip,
       limit: Limit,
     };
-    오름가져오기(body);
+    getOreum(body);
   }, []);
 
-  const 오름가져오기 = (body) => {
+  const getOreum = (body) => {
     axios.post("/api/oreum/oreums", body).then((response) => {
       if (response.data.success) {
         if (body.loadMore) {
-          오름방들설정([...오름방들, ...response.data.oreumInfo]);
+          setOreumRooms([...OreumRooms, ...response.data.oreumInfo]);
         } else {
-          오름방들설정(response.data.oreumInfo);
+          setOreumRooms(response.data.oreumInfo);
         }
         setPostSize(response.data.postSize);
       } else {
@@ -44,7 +45,7 @@ function LandingPage() {
     });
   };
 
-  const 더보기버튼 = () => {
+  const moreButton = () => {
     let skip = Skip + Limit;
 
     let body = {
@@ -52,11 +53,11 @@ function LandingPage() {
       limit: Limit,
       loadMore: true,
     };
-    오름가져오기(body);
+    getOreum(body);
     setSkip(skip);
   };
 
-  const 오름카드설정 = 오름방들.map((oreum, i) => {
+  const setOreumCard = OreumRooms.map((oreum, i) => {
     return (
       <Col lg={6} md={8} xs={24} key={i} className="mt-2">
         <Card
@@ -79,7 +80,7 @@ function LandingPage() {
       filters: filters,
     };
 
-    오름가져오기(body);
+    getOreum(body);
     setSkip(0);
   };
 
@@ -101,7 +102,7 @@ function LandingPage() {
 
     setSkip(0);
     setSearchTerm(newSearchTerm);
-    오름가져오기(body);
+    getOreum(body);
   };
 
   return (
@@ -144,11 +145,11 @@ function LandingPage() {
           </div>
           <SearchFeature refreshFunction={updateSearchTerm} />
         </div>
-        <div className="row gx-5">{오름카드설정}</div>
+        <div className="row gx-5">{setOreumCard}</div>
         <br />
         {PostSize >= Limit && (
           <div className="d-flex justify-content-center">
-            <button className="btn btn-dark" onClick={더보기버튼}>
+            <button className="btn btn-dark" onClick={moreButton}>
               더보기
             </button>
           </div>

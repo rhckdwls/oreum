@@ -20,8 +20,6 @@ const 지역들 = [
 ];
 
 function UploadPage(props) {
-  let history = useHistory();
-
   const [이름, 이름설정] = useState("");
   const [설명, 설명설정] = useState("");
   const [톡방, 톡방설정] = useState("");
